@@ -13,7 +13,7 @@ class ThemeChangeBloc {
 
   Stream<bool> get isNight => _subject.stream;
 
-  void increment(bool value) => _subject.add(_isNight = value);
+  void changeTheme(bool value) => _subject.add(_isNight = value);
 
   void disposed() {
     _subject.close();

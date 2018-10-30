@@ -73,6 +73,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _onchange(bool value) {
-    themeBloc.increment(value);
+    themeBloc.changeTheme(value);
   }
 }
